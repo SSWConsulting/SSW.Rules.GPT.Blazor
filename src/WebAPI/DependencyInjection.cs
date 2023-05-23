@@ -39,9 +39,16 @@ public static class DependencyInjection
         // TODO: Set CORS in Bicep
         var productionCorsUrls = new string[]
         {
+            // Static Web Apps
             "https://white-desert-00e3fb600.3.azurestaticapps.net",
+            "https://ashy-meadow-0a2bad900.3.azurestaticapps.net",
+            // Production
             "https://rulesgpt.ssw.com.au",
-            "https://ssw.com.au/rulesgpt"
+            "https://ssw.com.au/rulesgpt",
+            "https://ssw.com.au", // TODO: Fix Host Origin Header
+            // Staging
+            "https://www.tfs365.com/rulesgpt",
+            "https://www.tfs365.com" // TODO: Fix Host Origin Header
         };
 
         var developmentCorsUrls = new string[] { "https://localhost:5001" };
